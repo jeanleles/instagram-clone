@@ -10,41 +10,206 @@
 
 img {
     display: block;
-    width: 100%;
+    max-width: 100%;
 }
 
 body {
     background-color: #FAFAFA;
     width: 100%;
-    min-height: 100vh;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
 }
 
 main {
     width: 100%;
+    display: flex;
+    min-height: 100vh;
 }
 
 
-.instagra-wrapper {
+.instagram-wrapper {
     display: flex;
-    width: 935px;
-    margin: 32px auto 0 auto;
+    width: 760px;
+    margin: 0 auto;
     flex-direction: row;
     justify-content: center;
     padding-bottom: 32px;
 }
 
 .instagram-phone {
+    width: calc(50% - 15px);
+    margin-right: 15px;
+    margin-bottom: 12px;
     align-self: center;
     background-image: url(../images/bg-phone.png);
-    background-position: -46px 0;
-    background-size: 468.32px 634.15px;
-    flex-basis: 380.32px;
-    height: 581.15px;
-    margin-bottom: 12px;
-    margin-right: 32px;
-    width: 380px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 581px;
+
 }
 
 .instagram-login {
-    width: 380px;
+    max-width: calc(50% - 15px);
+    margin-left: 15px;
+    display: flex;
+    margin-bottom: 12px;
+    align-self: center;
+}
+
+.box {
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 1px;
+    margin-bottom: 12px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.insta-logo {
+    flex: 1;
+    margin: 20px 30px;
+}
+
+form {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+}
+
+input, button {
+    border-radius: 3px;
+    width: 80%;
+    margin: 0 20px 10px 20px;
+}
+
+input {
+    border: 1px solid #ccc;
+    padding: 8px;
+    outline: none;
+}
+
+.button-login {
+    background-color: rgba(0, 149, 246, .3);
+    border: 0;
+    border-radius: 3px;
+    padding: 5px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.button-login {
+    background-color: rgba(0, 149, 246, .3);
+    border: 0;
+    padding: 5px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.separator-or {
+    display: flex;
+    flex-grow: 1;
+    padding: 0;
+    position: relative;
+    margin: 10px 40px 18px;
+    align-items: stretch;
+}
+.line {
+    background-color: #ccc;
+    flex-shrink: 1;
+    flex-grow: 1;
+    height: 1px;
+    position: relative;
+    top: 0.45em;
+    width: 110px;
+}
+
+.or {
+    flex-shrink: 0;
+    flex-grow: 0;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    margin: 0 18px;
+    
+}
+
+.facebook-login {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 100%;   
+}
+
+.button-facebook {
+    border: 0;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #00376b;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.button-facebook img {
+    margin-right: 4px;
+}
+
+.forgot-password {
+    font-size: 12px;
+    color: #00376b;
+    margin: 10px 0;
+}
+
+.sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.sign-up p {
+    line-height: 18px;
+    margin: 16px;
+    text-align: center;
+}
+
+.sign-up a {
+    color: #0095f6;
+}
+
+
+.get-app p {
+    margin: 0 20px;
+    text-align: center;
+    line-height: 18px;
+}
+
+.stores {
+    max-width: 350px;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 30px;
+}
+
+.stores img {
+    height: 40px;
+}
+
+.stores a:first-child {
+    margin-right: 8px;
 }
