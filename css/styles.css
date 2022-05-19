@@ -110,12 +110,9 @@ input {
     font-weight: 700;
 }
 
-.button-login {
-    background-color: rgba(0, 149, 246, .3);
-    border: 0;
-    padding: 5px;
-    color: #fff;
-    font-weight: 700;
+
+.button-enabled {
+    background-color: rgba(0, 149, 246, 1);
 }
 
 .separator-or {
@@ -183,6 +180,7 @@ input {
 }
 
 .sign-up p {
+    font-size: 14px;
     line-height: 18px;
     margin: 16px;
     text-align: center;
@@ -212,4 +210,19 @@ input {
 
 .stores a:first-child {
     margin-right: 8px;
+}
+
+@media only screen and (max-width: 767px) {
+    .instagram-wrapper {
+        width: 100%;
+    }
+
+    .instagram-phone {
+        display: none;
+    }
+
+    .instagram-login {
+        max-width: 100%;
+        margin: 0;
+    }
 }
